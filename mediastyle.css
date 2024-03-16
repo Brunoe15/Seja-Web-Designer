@@ -1,0 +1,147 @@
+@media screen and (max-width:653px){
+.background{
+        background-image: url(./imagensevideos/background.png);
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+}
+
+/*Inicio da página*/
+.titulo{
+    margin-top: 80px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo h1{
+    text-align: center;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 170vh;
+}
+.principal figure{
+    width: 100%;  
+    padding: 10px;
+}
+.principal figure video{
+    height: 250px;
+    margin-bottom: -20px;
+}
+.principal article{
+    display: flex;
+    align-items: center;
+    width: 100%;  
+    padding: 30px;
+}
+.principal article h1{
+    text-align: center;
+}
+.principal article h2{
+    text-align: center;
+}
+.principal article p{
+    text-align: center;
+}
+.principal article ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principal article button{
+    width: 70%;
+    height: 70px;
+}
+
+/*Conteudo sobre o curso*/
+.divisor{
+    height: 165px;
+    text-align: center;
+}
+.divisor p{
+    font-size: 35px;
+}
+
+/*Conteúdo Sobre o Curso*/
+.pqaprender{
+    height: 153vh;
+    flex-direction: column;
+}
+.pqaprender p{
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+}
+.pqaprender figure{
+    width: 100%;
+}
+.pqaprender figure img{
+    width: 90%;
+    margin: 20px 10px 0 20px; 
+    border-radius: 20px;
+}
+
+.conteudos{
+    height: 435vh;
+}
+.conteudos article{
+    width: 100%;
+    margin: 20px 50px 50px 50px; 
+    display: flex;
+    flex-direction: column;
+}
+#cardconteudo img{
+    height: 72%;
+}
+
+.diferenciais{
+    height: 220vh;
+    background-color: var(--cor8);
+    display: flex;
+}
+.diferenciais article{
+    width: 100%;
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Sobre a criadora do curso*/
+.criadora{
+    overflow-x: hidden;
+    flex-direction: column;
+    height: 200vh;
+}
+.criadora article{
+    width: 100%;
+}
+.criadora article h1{
+    padding-right: 30px;
+    text-align: center;
+}
+.criadora article h2{
+    margin: 10px 60px -5px;
+    padding: 5px 24px;
+    width: 61%;
+}
+.criadora article p{
+    width: 130%;
+    margin-left: -50px;
+    text-align: center;
+}
+.criadora figure{
+    width: 100%;
+    padding-left: 70px;
+}
+.criadora figure img{
+    width: 80%;
+}
+.criadora #links{
+    width: 100%;
+}
+}

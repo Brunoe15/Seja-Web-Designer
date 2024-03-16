@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+:root{
+    --cor1: #49ad33;
+    --cor2: #9ccb00;
+    --cor3: #913abd;
+    --cor4: #a63dd9;
+    --cor5: #4a008a;
+    --cor6: #0B0B44;
+    --cor7: #616161;
+    --cor8: #f4f3f0;
+    --cor9: #28799E;
+    --cor10: #1b5570;
+    font-family: "Roboto", Sans-serif;
+}
+
+.background{
+    background-image: url(./imagensevideos/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/*Inicio da página*/
+.titulo{
+    margin-top: 10px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 2s infinite;
+}
+.titulo h1{
+    font-family: "Roboto", Sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--cor8);
+    text-transform: uppercase;
+}
+@keyframes pulse {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+}
+.titulo img{
+    height: 13vh;
+    padding-left: 20px;
+}
+
+/*Conteúdo Principal da Página*/
+.principal{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+}
+
+.principal figure{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.principal figure video{
+    width: 89%;
+    height: 45vh;
+}
+
+.principal article{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    font-family: "Roboto", Sans-serif;
+}
+.principal article h1{
+    font-size: 47px;
+    color: var(--cor1);
+}
+.principal article h2{
+    font-size: 37px;
+    color: var(--cor2);
+    text-transform: uppercase;
+    font-weight: 10;
+}
+.principal article p{
+    font-size: 34px;
+    color: var(--cor8);
+}
+ul {
+    list-style-type: none;
+}  
+ul li {
+    font-size: 20px;
+    color: var(--cor8);
+    padding: 0 35px 5px;
+    background-repeat: no-repeat; 
+    background-position: left center;
+} 
+#icompute {
+    background-image: url(./imagensevideos/computador.png);
+  }
+#iescola{
+    background-image: url(./imagensevideos/chapeuescola.png);
+}
+#iporcen{
+    background-image: url(./imagensevideos/porcentagem.png);
+}
+button{
+    width: 40%;
+    height: 11%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor1);
+    font-size: 28px;
+    color: rgb(15, 15, 15);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(15, 15, 15);
+    animation: tilt-shaking 0.5s 4;
+}
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+button:hover{
+    background-color: var(--cor2);
+}
+button:active{
+    transform: scale(0.86);
+}
+
+/*Divisor*/
+.divisor{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--cor2);
+}
+.divisor p{
+    font-size: 40px;
+    font-family: "Roboto", Sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--cor8);
+}
+.divisor b{
+    font-size: 40px;
+    font-family: "Roboto", Sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--cor9);
+}
+
+/*Conteúdo Sobre o Curso*/
+.pqaprender{
+    height: 83vh;
+    background-color: var(--cor10);
+    display: flex;
+}
+.pqaprender p{
+    margin-left: 15px;
+    width: 50%;
+    color: var(--cor8);
+    font-size: 20px;
+    font-family: "Roboto", Sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
+    line-height: 1.5;
+}
+.pqaprender figure{
+    width: 50%;
+}
+.pqaprender figure img{
+    width: 90%;
+    margin: 50px 10px 0px; 
+    border-radius: 20px;
+}
+
+.conteudos{
+    padding-top: 25px;
+    height: 110vh;
+    background-color: var(--cor10);
+    display: flex;
+}
+.conteudos article{
+    width: 100%;
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 30px; 
+}
+#cardconteudo{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--cor8);
+    box-shadow: 5px 5px 5px rgb(25, 22, 36);
+}
+#cardconteudo img{
+    width: 100%;
+    height: 67%;
+    border-radius: 20px;
+}
+#cardconteudo p{
+    font-family: "Roboto", Sans-serif;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    color: #151825;
+}
+
+.diferenciais{
+    height: 83vh;
+    background-color: var(--cor8);
+    display: flex;
+}
+.diferenciais article{
+    width: 100%;
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 30px; 
+}
+.carddife{
+    width: 100%;
+    display: flex;
+}
+#iconedif{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+#diferencial{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#diferencial h1{
+    padding: 5px 0px 5px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Roboto", Sans-serif;
+}
+#diferencial p{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-family: "Roboto", Sans-serif;
+    line-height: 1.5;
+}
+
+/*Sobre a criadora do curso*/
+.criadora{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor8);
+    display: flex;
+    background: rgb(166,61,217);
+    background: linear-gradient(90deg, rgba(166,61,217,1) 0%, rgba(131,67,191,1) 2%, rgba(113,70,177,1) 7%, rgba(27,85,112,1) 28%, rgba(33,102,133,1) 83%, rgba(40,121,158,1) 100%);
+}
+.criadora article{
+    padding: 70px 50px;
+    width: 55%;
+    color: var(--cor8);
+}
+.criadora article h1{
+    font-size: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.criadora article h2{
+    height: 40px;
+    background-color: var(--cor4);
+    font-style: italic;
+    margin: 10px 30px -5px;
+    padding: 5px 17px;
+    width: 31%;
+    border-radius: 8px 8px 0 0;
+}
+.criadora article p{
+    padding: 20px 30px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.criadora figure{
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.criadora figure img{
+    border-radius: 50%;
+    box-shadow: 15px 15px 12px rgb(25, 22, 36);
+}
+.criadora #links{
+    width: 60%;
+    margin-left: 30px;
+    display: flex;
+    gap: 20px;
+}
+.criadora #links a{
+    border: 2px solid var(--cor8);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+/*Rodapé*/
+footer{
+    padding: 60px;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagensevideos/background.png);
+    color: var(--cor8);
+}
+footer img{
+    margin-bottom: 10px;
+    width: 80px;
+}
